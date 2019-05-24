@@ -1,0 +1,50 @@
+MariaDB [cs566101]> show tables;
++--------------------+
+| Tables_in_cs566101 |
++--------------------+
+| Appointments       |
+| Exercises          |
+| Patient            |
+| Therapist          |
++--------------------+
+
+MariaDB [cs566101]> describe Appointments;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| pID       | varchar(30) | YES  |     | NULL    |       |
+| eID       | varchar(30) | YES  |     | NULL    |       |
+| aID       | varchar(30) | NO   | PRI | NULL    |       |
+| date      | date        | YES  |     | NULL    |       |
+| time      | time        | YES  |     | NULL    |       |
+| duration  | int(11)     | YES  |     | NULL    |       |
+| exercises | varchar(30) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+
+MariaDB [cs566101]> describe Exercises;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| pID   | varchar(30) | YES  |     | NULL    |       |
+| age   | int(11)     | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+
+MariaDB [cs566101]> describe Patient;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| pID     | varchar(30) | YES  |     | NULL    |       |
+| name    | varchar(30) | YES  |     | NULL    |       |
+| age     | int(11)     | YES  |     | NULL    |       |
+| contact | varchar(30) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+MariaDB [cs566101]> describe Therapist;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| tID       | varchar(30) | YES  |     | NULL    |       |
+| specialty | varchar(30) | YES  |     | NULL    |       |
+| name      | varchar(30) | YES  |     | NULL    |       |
+| contact   | varchar(30) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+

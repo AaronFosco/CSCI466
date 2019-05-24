@@ -1,0 +1,147 @@
+  _______________________________________________________________
+ /                                                               \
+||  Course: CSCI-466    Assignment #: 7    Semester: Spring 2018 ||
+||                                                               ||
+||  NAME:  Aaron Fosco    Z-ID: z1835687     Section: 1          ||
+||                                                               ||
+||  TA's Name: Ishaan Mohammed                                   ||
+||                                                               ||
+||  Due: Wednesday 3/28/2018 by 11:59PM                          ||
+||                                                               ||
+||  Description:                                                 ||
+||                                                               ||
+||    This is the output file for assignment7. This correlates   ||
+||    to the script file "assignment7.sql".                      ||
+ \_______________________________________________________________/
+
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+Query OK, 0 rows affected (0.09 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.20 sec)
+
+Query OK, 0 rows affected (0.61 sec)
+
+Query OK, 1 row affected (0.04 sec)
+
+Query OK, 1 row affected (0.10 sec)
+
+Query OK, 1 row affected (0.15 sec)
+
+Query OK, 1 row affected (0.20 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
++---------+----------+----------+
+| ownerid | fname    | lname    |
++---------+----------+----------+
+|       1 | John     | Doe      |
+|       2 | Michonne | Grimes   |
+|       3 | Sophia   | Peletier |
+|       4 | Rick     | Grimes   |
+|       5 | Luke     | Spencer  |
++---------+----------+----------+
+5 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.77 sec)
+
+Query OK, 1 row affected (0.09 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.08 sec)
+
+Query OK, 1 row affected (0.06 sec)
+
+Query OK, 1 row affected (0.03 sec)
+
++-------+-----------------+------------+---------+
+| petid | pname           | pdob       | ownerid |
++-------+-----------------+------------+---------+
+|     1 | Fluffy Mc. Fluf | 2010-03-28 |       1 |
+|     2 | Gus             | 2012-05-11 |       2 |
+|     3 | Cantalope       | 2006-07-16 |       3 |
+|     4 | Corrin          | 2009-09-03 |       3 |
+|     5 | Myr             | 2018-01-28 |       4 |
+|     6 | Genbu           | 2000-05-09 |       5 |
++-------+-----------------+------------+---------+
+6 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.81 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.08 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.09 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.08 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.06 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 0 rows affected (0.89 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.78 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 1 row affected (0.05 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.05 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.21 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
++-------+-----------------+---------+----------+------------+
+| petid | pname           | ownerid | ptype    | pdob       |
++-------+-----------------+---------+----------+------------+
+|     1 | Fluffy Mc. Fluf |       1 | cat      | 2010-03-28 |
+|     2 | Gus             |       2 | dog      | 2012-05-11 |
+|     3 | Cantalope       |       3 | cat      | 2006-07-16 |
+|     4 | Corrin          |       3 | lizard   | 2009-09-03 |
+|     5 | Myr             |       4 | goldfish | 2018-01-28 |
+|     6 | Genbu           |       5 | turtle   | 2000-05-09 |
++-------+-----------------+---------+----------+------------+
+6 rows in set (0.00 sec)
+
+Query OK, 6 rows affected (0.51 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
++-----------------+----------+----------+
+| pname           | fname    | lname    |
++-----------------+----------+----------+
+| Fluffy Mc. Fluf | John     | Doe      |
+| Gus             | Michonne | Grimes   |
+| Cantalope       | Sophia   | Peletier |
+| Corrin          | Sophia   | Peletier |
+| Myr             | Rick     | Grimes   |
+| Genbu           | Luke     | Spencer  |
++-----------------+----------+----------+
+6 rows in set (0.00 sec)
+

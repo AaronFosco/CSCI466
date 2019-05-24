@@ -1,0 +1,25 @@
+	#header {
+		background-color:blue;
+		color:white;
+		text-align:center;
+		padding:10px;
+	}
+	#mainsec {
+		background-color:rebeccapurple;
+		color:violet;
+		padding:5px;
+	}
+	#footer {
+		background-color:indianred;
+		color:indigo;
+		text-align:center;
+		padding:5px;
+	}
+	ul {
+		list-style-type:upper-roman;
+	}
+	table {
+	       color:violet;
+	       text-align:center;
+	       padding:10px;
+	}

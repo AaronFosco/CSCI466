@@ -1,0 +1,85 @@
+MariaDB [z1835687]> show tables
+    -> ;
++--------------------+
+| Tables_in_z1835687 |
++--------------------+
+| Marina             |
+| MarinaSlip         |
+| Owner              |
+| ServiceCategory    |
+| ServiceRequest     |
++--------------------+
+5 rows in set (0.00 sec)
+
+MariaDB [z1835687]> describe marina
+    -> ;
+ERROR 1146 (42S02): Table 'z1835687.marina' doesn't exist
+MariaDB [z1835687]> describe Marina;
++-----------+----------+------+-----+---------+----------------+
+| Field     | Type     | Null | Key | Default | Extra          |
++-----------+----------+------+-----+---------+----------------+
+| MarinaNum | int(11)  | NO   | PRI | NULL    | auto_increment |
+| Name      | char(20) | YES  |     | NULL    |                |
+| Address   | char(15) | YES  |     | NULL    |                |
+| City      | char(15) | YES  |     | NULL    |                |
+| State     | char(2)  | YES  |     | NULL    |                |
+| Zip       | char(5)  | YES  |     | NULL    |                |
++-----------+----------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+MariaDB [z1835687]> describe MarinaSlip
+    -> ;
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| SlipID    | int(11)      | NO   | PRI | NULL    | auto_increment |
+| MarinaNum | int(11)      | YES  | MUL | NULL    |                |
+| SlipNum   | char(4)      | YES  |     | NULL    |                |
+| Length    | decimal(4,0) | YES  |     | NULL    |                |
+| RentalFee | decimal(8,2) | YES  |     | NULL    |                |
+| BoatName  | char(50)     | YES  |     | NULL    |                |
+| BoatType  | char(50)     | YES  |     | NULL    |                |
+| OwnerNum  | int(11)      | YES  |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)
+
+MariaDB [z1835687]> describe Owner;
++-----------+----------+------+-----+---------+----------------+
+| Field     | Type     | Null | Key | Default | Extra          |
++-----------+----------+------+-----+---------+----------------+
+| OwnerNum  | int(11)  | NO   | PRI | NULL    | auto_increment |
+| LastName  | char(50) | YES  |     | NULL    |                |
+| FirstName | char(20) | YES  |     | NULL    |                |
+| Address   | char(15) | YES  |     | NULL    |                |
+| City      | char(15) | YES  |     | NULL    |                |
+| State     | char(2)  | YES  |     | NULL    |                |
+| Zip       | char(5)  | YES  |     | NULL    |                |
++-----------+----------+------+-----+---------+----------------+
+7 rows in set (0.00 sec)
+
+MariaDB [z1835687]> describe ServiceCatagory
+    -> ;
+ERROR 1146 (42S02): Table 'z1835687.ServiceCatagory' doesn't exist
+MariaDB [z1835687]> describe ServiceCategory;
++---------------------+-----------+------+-----+---------+----------
+| Field               | Type      | Null | Key | Default | Extra    
++---------------------+-----------+------+-----+---------+---------
+| CategoryNum         | int(11)   | NO   | PRI | NULL|auto_increment
+| CategoryDescription | char(255) | YES  |     | NULL|
++---------------------+-----------+------+-----+---------+----------
+2 rows in set (0.00 sec)
+
+MariaDB [z1835687]> describe ServiceRequest;
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra     
++-----------------+--------------+------+-----+---------+----------
+| ServiceID       | int(11)      | NO   | PRI | NULL    | auto_increment |
+| SlipID          | int(11)      | YES  | MUL | NULL    |                |
+| CategoryNum     | int(11)      | YES  | MUL | NULL    |                |
+| Description     | char(255)    | YES  |     | NULL    |                |
+| Status          | char(255)    | YES  |     | NULL    |                |
+| EstHours        | decimal(4,2) | YES  |     | NULL    |                |
+| SpentHours      | decimal(4,2) | YES  |     | NULL    |                |
+| NextServiceDate | date         | YES  |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)

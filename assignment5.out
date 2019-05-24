@@ -1,0 +1,342 @@
+  _______________________________________________________________
+ /                                                               \
+||  Course: CSCI-466    Assignment #: 5    Semester: Spring 2018 ||
+||                                                               ||
+||  NAME:  Aaron Fosco    Z-ID: z1835687     Section: 1          ||
+||                                                               ||
+||  TA's Name: Ishaan Mohammed                                   ||
+||                                                               ||
+||  Due: Friday 3/2/2018 by 11:59PM                              ||
+||                                                               ||
+||  Description:                                                 ||
+||                                                               ||
+||    This is the output file for assignment5. This correlates   ||
+||    to the script file "assignment5.sql".                      ||
+ \_______________________________________________________________/
+
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
++--------------------+
+| Tables_in_BabyName |
++--------------------+
+| BabyName           |
++--------------------+
+1 row in set (0.01 sec)
+
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| name   | varchar(15) | NO   | PRI | NULL    |       |
+| count  | int(11)     | YES  |     | NULL    |       |
+| gender | char(1)     | NO   | PRI | NULL    |       |
+| year   | smallint(6) | NO   | PRI | NULL    |       |
+| place  | char(2)     | NO   | PRI | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
++------+
+| year |
++------+
+| 1914 |
+| 1916 |
+| 1917 |
+| 1918 |
+| 1922 |
+| 1923 |
+| 1925 |
+| 1926 |
+| 1927 |
+| 1929 |
+| 1930 |
+| 1931 |
+| 1935 |
+| 1937 |
+| 1938 |
+| 1942 |
+| 1943 |
+| 1944 |
+| 1947 |
+| 1948 |
+| 1949 |
+| 1950 |
+| 1951 |
+| 1952 |
+| 1953 |
+| 1954 |
+| 1955 |
+| 1956 |
+| 1957 |
+| 1959 |
+| 1960 |
+| 1961 |
+| 1962 |
+| 1963 |
+| 1964 |
+| 1965 |
+| 1966 |
+| 1967 |
+| 1968 |
+| 1969 |
+| 1970 |
+| 1971 |
+| 1972 |
+| 1973 |
+| 1974 |
+| 1975 |
+| 1976 |
+| 1977 |
+| 1978 |
+| 1979 |
++------+
+50 rows in set (0.00 sec)
+
++--------------+
+| name         |
++--------------+
+| Aadam        |
+| Aadil        |
+| Aailiyah     |
+| Aailyah      |
+| Aaisha       |
+| Aakash       |
+| Aaleyah      |
+| Aalia        |
+| Aaliah       |
+| Aaliayah     |
+| Aalijah      |
+| Aaliya       |
+| Aaliyah      |
+| Aaliyha      |
+| Aalliyah     |
+| Aalyah       |
+| Aalyiah      |
+| Aaminah      |
+| Aamir        |
+| Aanand       |
+| Aanchal      |
+| Aanisah      |
+| Aaran        |
+| Aaren        |
+| Aariana      |
+| Aaric        |
+| Aarika       |
+| Aarin        |
+| Aarion       |
+| Aariona      |
+| Aaron        |
+| Aaronjames   |
+| Aaronmichael |
+| Aaronn       |
+| Aarron       |
+| Aarti        |
+| Aaryn        |
+| Aashna       |
+| Aasia        |
+| Aasin        |
+| Aasiyah      |
+| Ab           |
+| Abagael      |
+| Abagail      |
+| Abagaile     |
+| Abagale      |
+| Abagayle     |
+| Abaigeal     |
+| Abanoub      |
+| Abayomi      |
++--------------+
+50 rows in set (0.00 sec)
+
++-------+-------------+--------+
+| Total | name        | gender |
++-------+-------------+--------+
+| 83077 | Michael     | F      |
+| 65836 | Matthew     | F      |
+| 65502 | Christopher | F      |
+| 62325 | Jacob       | F      |
+| 61522 | Joshua      | F      |
+| 60122 | Tyler       | F      |
+| 58391 | Nicholas    | F      |
+| 55949 | Jessica     | F      |
+| 53943 | Brandon     | F      |
+| 53599 | Daniel      | F      |
+| 53388 | Ashley      | F      |
+| 52098 | Austin      | F      |
+| 51892 | Taylor      | F      |
+| 51764 | Andrew      | F      |
+| 50767 | Joseph      | F      |
+| 48809 | Emily       | F      |
+| 46847 | Ryan        | F      |
+| 46523 | John        | F      |
+| 46329 | Zachary     | F      |
+| 46166 | David       | F      |
+| 45527 | James       | F      |
+| 43341 | Samantha    | F      |
+| 43265 | Justin      | F      |
+| 42775 | Sarah       | F      |
+| 41095 | Anthony     | F      |
+| 40365 | William     | F      |
+| 40092 | Jordan      | F      |
+| 39132 | Alexander   | F      |
+| 37215 | Robert      | F      |
+| 36383 | Jonathan    | F      |
+| 34046 | Hannah      | F      |
+| 33719 | Kyle        | F      |
+| 32993 | Brittany    | F      |
+| 32729 | Amanda      | F      |
+| 32427 | Elizabeth   | F      |
+| 32392 | Alexis      | F      |
+| 32190 | Kayla       | F      |
+| 32125 | Rachel      | F      |
+| 31801 | Kevin       | F      |
+| 31350 | Cody        | F      |
+| 31093 | Megan       | F      |
+| 29065 | Christian   | F      |
+| 28348 | Thomas      | F      |
+| 26943 | Lauren      | F      |
+| 26688 | Aaron       | F      |
+| 26052 | Courtney    | F      |
+| 26029 | Stephanie   | F      |
+| 25459 | Jennifer    | F      |
+| 25454 | Benjamin    | F      |
+| 25009 | Eric        | F      |
++-------+-------------+--------+
+50 rows in set (0.63 sec)
+
++-------+-------+------+
+| name  | count | year |
++-------+-------+------+
+| Aaron |     5 | 1914 |
+| Aaron |     5 | 1916 |
+| Aaron |     5 | 1917 |
+| Aaron |     7 | 1918 |
+| Aaron |     6 | 1922 |
+| Aaron |     8 | 1923 |
+| Aaron |    11 | 1925 |
+| Aaron |     8 | 1926 |
+| Aaron |     6 | 1927 |
+| Aaron |     6 | 1929 |
+| Aaron |     6 | 1930 |
+| Aaron |     9 | 1931 |
+| Aaron |     5 | 1935 |
+| Aaron |     5 | 1937 |
+| Aaron |     5 | 1938 |
+| Aaron |     6 | 1942 |
+| Aaron |     8 | 1943 |
+| Aaron |     7 | 1944 |
+| Aaron |     8 | 1947 |
+| Aaron |     8 | 1948 |
+| Aaron |     7 | 1949 |
+| Aaron |     7 | 1950 |
+| Aaron |    11 | 1951 |
+| Aaron |     6 | 1952 |
+| Aaron |     8 | 1953 |
+| Aaron |     7 | 1954 |
+| Aaron |    11 | 1955 |
+| Aaron |    14 | 1956 |
+| Aaron |    11 | 1957 |
+| Aaron |    13 | 1959 |
+| Aaron |    20 | 1960 |
+| Aaron |    10 | 1961 |
+| Aaron |    12 | 1962 |
+| Aaron |    12 | 1963 |
+| Aaron |     5 | 1964 |
+| Aaron |    29 | 1964 |
+| Aaron |     8 | 1965 |
+| Aaron |    29 | 1965 |
+| Aaron |     5 | 1966 |
+| Aaron |    19 | 1966 |
+| Aaron |    19 | 1967 |
+| Aaron |    23 | 1968 |
+| Aaron |     7 | 1969 |
+| Aaron |    43 | 1969 |
+| Aaron |    15 | 1970 |
+| Aaron |     5 | 1970 |
+| Aaron |     5 | 1970 |
+| Aaron |    70 | 1970 |
+| Aaron |     8 | 1971 |
+| Aaron |     5 | 1971 |
++-------+-------+------+
+50 rows in set (0.00 sec)
+
++----------+
+| count(*) |
++----------+
+|  7601706 |
++----------+
+1 row in set (0.00 sec)
+
++----------------------+
+| count(distinct name) |
++----------------------+
+|                10752 |
++----------------------+
+1 row in set (0.05 sec)
+
++------------+--------+
+| Name_Count | gender |
++------------+--------+
+|       5602 | F      |
+|       4803 | M      |
++------------+--------+
+2 rows in set (0.04 sec)
+
++-------+------------+
+| place | Name_Count |
++-------+------------+
+| AK    |       1583 |
+| AL    |       6501 |
+| AR    |       4825 |
+| AZ    |       5500 |
+| CA    |      18986 |
+| CO    |       4953 |
+| CT    |       3531 |
+| DC    |       2622 |
+| DE    |       1677 |
+| FL    |      10820 |
+| GA    |       9467 |
+| HI    |       2870 |
+| IA    |       4257 |
+| ID    |       2874 |
+| IL    |      10847 |
+| IN    |       6392 |
+| KS    |       4359 |
+| KY    |       5178 |
+| LA    |       6957 |
+| MA    |       5185 |
+| MD    |       5455 |
+| ME    |       2146 |
+| MI    |       8567 |
+| MN    |       5374 |
+| MO    |       6301 |
+| MS    |       5486 |
+| MT    |       2188 |
+| NC    |       8598 |
+| ND    |       2282 |
+| NE    |       3383 |
+| NH    |       1756 |
+| NJ    |       7428 |
+| NM    |       3333 |
+| NV    |       2861 |
+| NY    |      14101 |
+| OH    |       9066 |
+| OK    |       5548 |
+| OR    |       4143 |
+| PA    |       8851 |
+| RI    |       1795 |
+| SC    |       5632 |
+| SD    |       2289 |
+| TN    |       6750 |
+| TX    |      16768 |
+| US    |      95025 |
+| UT    |       4489 |
+| VA    |       7093 |
+| VT    |       1358 |
+| WA    |       5922 |
+| WI    |       5369 |
+| WV    |       3261 |
+| WY    |       1524 |
++-------+------------+
+52 rows in set (4.21 sec)
+
